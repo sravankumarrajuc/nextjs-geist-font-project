@@ -226,7 +226,7 @@ function Hero() {
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "bg-white rounded-2xl shadow-2xl border border-gray-200 overflow-hidden",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                                        src: "https://placehold.co/1200x800?text=Review+Pilot+AI+Dashboard+Interface+with+modern+analytics+charts+and+review+management+tools",
+                                        src: "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d86c9803-f418-45b3-82f4-61c274f829d7.png",
                                         alt: "Review Pilot AI Dashboard Interface with modern analytics charts and review management tools",
                                         className: "w-full h-auto",
                                         onError: (e)=>{
@@ -354,7 +354,7 @@ function Testimonials() {
             company: "Bella Vista Restaurant Group",
             content: "Review Pilot AI has transformed how we handle customer feedback. The AI-generated responses are so natural and on-brand, and we've seen a 40% improvement in our response time.",
             rating: 5,
-            avatar: "https://placehold.co/80x80?text=SJ"
+            avatar: "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e670fdb3-19d3-4856-9e11-c3054da5cb9a.png"
         },
         {
             name: "Michael Chen",
@@ -362,7 +362,7 @@ function Testimonials() {
             company: "TechStart Solutions",
             content: "The sentiment analysis feature is incredible. We can now identify issues before they become major problems. Our customer satisfaction scores have improved by 25%.",
             rating: 5,
-            avatar: "https://placehold.co/80x80?text=MC"
+            avatar: "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3bff5b8b-f492-4c10-81ca-bfc0228af8aa.png"
         },
         {
             name: "Emily Rodriguez",
@@ -370,7 +370,7 @@ function Testimonials() {
             company: "Urban Fitness Centers",
             content: "Managing reviews across 12 locations used to be a nightmare. Now everything is centralized, and our team can respond quickly and consistently. Game changer!",
             rating: 5,
-            avatar: "https://placehold.co/80x80?text=ER"
+            avatar: "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/a20203f8-4970-4714-8a49-20496f44915a.png"
         },
         {
             name: "David Thompson",
@@ -378,7 +378,7 @@ function Testimonials() {
             company: "QuickBite Restaurants",
             content: "The analytics dashboard gives us insights we never had before. We've identified key areas for improvement and our overall rating has increased from 3.8 to 4.6 stars.",
             rating: 5,
-            avatar: "https://placehold.co/80x80?text=DT"
+            avatar: "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/dd12b0c6-6fa3-4a22-ae91-13dc9c67876e.png"
         },
         {
             name: "Lisa Park",
@@ -386,7 +386,7 @@ function Testimonials() {
             company: "Luxury Hotels Group",
             content: "The multi-platform integration is seamless. We're now managing reviews from Google, TripAdvisor, and Booking.com all in one place. Saves us hours every week.",
             rating: 5,
-            avatar: "https://placehold.co/80x80?text=LP"
+            avatar: "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/7cc5a407-e030-45e8-9656-08dee707967f.png"
         },
         {
             name: "James Wilson",
@@ -394,7 +394,7 @@ function Testimonials() {
             company: "Wilson Automotive",
             content: "Review Pilot AI helped us turn our online reputation around. The AI responses are professional and help us maintain a positive brand image. Highly recommended!",
             rating: 5,
-            avatar: "https://placehold.co/80x80?text=JW"
+            avatar: "https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/bdcc5646-b4bc-47cd-b188-10f6109fcd59.png"
         }
     ];
     const stats = [

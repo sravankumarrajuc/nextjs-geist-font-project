@@ -2,10 +2,11 @@
   "pages": {
     "/signup/page": [
       "static/chunks/[root-of-the-server]__9a168d68._.css",
-      "static/chunks/node_modules_next_dist_1a6ee436._.js",
+      "static/chunks/node_modules_next_ab318d8d._.js",
+      "static/chunks/src_components_ui_header_tsx_1fc1a450._.js",
       "static/chunks/src_app_layout_tsx_c0237562._.js",
-      "static/chunks/_4efcfb15._.js",
-      "static/chunks/src_app_signup_page_tsx_a993527f._.js",
+      "static/chunks/_779b3a94._.js",
+      "static/chunks/src_app_signup_page_tsx_3e4e4e12._.js",
       "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_fd44f5a4._.js",
       "static/chunks/node_modules_next_dist_compiled_2ce9398a._.js",
       "static/chunks/node_modules_next_dist_client_8f19e6fb._.js",

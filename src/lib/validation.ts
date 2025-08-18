@@ -197,7 +197,7 @@ export const envSchema = z.object({
   FACEBOOK_APP_ID: z.string().optional(),
   FACEBOOK_APP_SECRET: z.string().optional(),
   NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY: z.string().min(1, 'Stripe publishable key is required'),
-  NEXT_PUBLIC_APP_URL: z.string().url().default('http://localhost:8000')
+  NEXT_PUBLIC_APP_URL: z.string().url().default('http://localhost:8084')
 });
 
 // Validation helper functions

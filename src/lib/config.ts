@@ -279,11 +279,11 @@ export const app = {
   version: '1.0.0',
   url: env.NEXT_PUBLIC_APP_URL,
   environment: env.NODE_ENV,
-  port: process.env.PORT || 8000,
+  port: process.env.PORT || 8084,
   cors: {
     origin: env.NODE_ENV === 'production' 
       ? [env.NEXT_PUBLIC_APP_URL] 
-      : ['http://localhost:8000', 'http://localhost:3000'],
+      : ['http://localhost:8084', 'http://localhost:3000'],
     credentials: true
   },
   session: {

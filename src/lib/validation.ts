@@ -189,14 +189,14 @@ export const envSchema = z.object({
   DATABASE_URL: z.string().optional(),
   JWT_SECRET: z.string().min(32, 'JWT secret must be at least 32 characters'),
   JWT_EXPIRES_IN: z.string().default('7d'),
-  OPENROUTER_API_KEY: z.string().min(1, 'OpenRouter API key is required'),
-  STRIPE_SECRET_KEY: z.string().min(1, 'Stripe secret key is required'),
-  STRIPE_WEBHOOK_SECRET: z.string().min(1, 'Stripe webhook secret is required'),
+  OPENROUTER_API_KEY: z.string().optional().default('mock-key-for-development'),
+  STRIPE_SECRET_KEY: z.string().optional().default('sk_test_mock-key-for-development'),
+  STRIPE_WEBHOOK_SECRET: z.string().optional().default('whsec_mock-key-for-development'),
   GOOGLE_CLIENT_ID: z.string().optional(),
   GOOGLE_CLIENT_SECRET: z.string().optional(),
   FACEBOOK_APP_ID: z.string().optional(),
   FACEBOOK_APP_SECRET: z.string().optional(),
-  NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY: z.string().min(1, 'Stripe publishable key is required'),
+  NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY: z.string().optional().default('pk_test_mock-key-for-development'),
   NEXT_PUBLIC_APP_URL: z.string().url().default('http://localhost:8084')
 });
 

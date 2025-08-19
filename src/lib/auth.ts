@@ -28,7 +28,7 @@ export interface JWTPayload {
 }
 
 // Configuration
-const JWT_SECRET = process.env.JWT_SECRET || 'your-super-secret-jwt-key-change-in-production';
+const JWT_SECRET = process.env.JWT_SECRET || 'development-jwt-secret-key-that-is-at-least-32-characters-long-for-testing';
 const JWT_EXPIRES_IN = process.env.JWT_EXPIRES_IN || '7d';
 const SALT_ROUNDS = 12;
 

@@ -196,11 +196,16 @@ export const queries = {
   // Organization queries
   createOrganization: null as any,
   getOrganizationsByUser: null as any,
+  getOrganizationById: null as any,
   
   // Review queries
   createReview: null as any,
   getReviewsByOrganization: null as any,
+  getReviewById: null as any,
   updateReviewResponse: null as any,
+  updateReviewSentiment: null as any,
+  getReviewStats: null as any,
+  getRecentReviews: null as any,
   
   // Subscription queries
   createSubscription: null as any,
@@ -239,18 +244,46 @@ function initializeQueries() {
     SELECT * FROM organizations WHERE owner_id = ?
   `);
   
+  queries.getOrganizationById = database.prepare(`
+    SELECT * FROM organizations WHERE id = ?
+  `);
+  
   // Review queries
   queries.createReview = database.prepare(`
-    INSERT INTO reviews (organization_id, platform, review_id, rating, text, sentiment, topics)
-    VALUES (?, ?, ?, ?, ?, ?, ?)
+    INSERT INTO reviews (organization_id, platform, review_id, rating, text, author_name, sentiment, topics, review_date)
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
   `);
   
   queries.getReviewsByOrganization = database.prepare(`
     SELECT * FROM reviews WHERE organization_id = ? ORDER BY created_at DESC
   `);
   
+  queries.getReviewById = database.prepare(`
+    SELECT * FROM reviews WHERE id = ?
+  `);
+  
   queries.updateReviewResponse = database.prepare(`
     UPDATE reviews SET response_draft = ?, status = ? WHERE id = ?
+  `);
+  
+  queries.updateReviewSentiment = database.prepare(`
+    UPDATE reviews SET sentiment = ?, sentiment_score = ?, topics = ? WHERE id = ?
+  `);
+  
+  queries.getReviewStats = database.prepare(`
+    SELECT 
+      COUNT(*) as total_reviews,
+      AVG(rating) as average_rating,
+      SUM(CASE WHEN status = 'pending' THEN 1 ELSE 0 END) as pending_responses,
+      SUM(CASE WHEN sentiment = 'positive' THEN 1 ELSE 0 END) as positive_count,
+      SUM(CASE WHEN sentiment = 'neutral' THEN 1 ELSE 0 END) as neutral_count,
+      SUM(CASE WHEN sentiment = 'negative' THEN 1 ELSE 0 END) as negative_count
+    FROM reviews WHERE organization_id = ?
+  `);
+  
+  queries.getRecentReviews = database.prepare(`
+    SELECT * FROM reviews WHERE organization_id = ? 
+    ORDER BY created_at DESC LIMIT ?
   `);
   
   // Subscription queries
